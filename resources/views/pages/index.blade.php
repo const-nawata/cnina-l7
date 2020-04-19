@@ -1,3 +1,7 @@
+@extends('layouts.base')
 
-<h2>Index page</h2>
+
+@section('body')
+<h2>Index from layout</h2>
 <div>Method: {{ $method_name }}</div>
+@endsection
