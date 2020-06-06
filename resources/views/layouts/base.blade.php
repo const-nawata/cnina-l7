@@ -37,8 +37,10 @@
 </head>
 
 <body>
+@yield('header')
 
 @yield('body')
 
+@yield('footer')
 </body>
 </html>
