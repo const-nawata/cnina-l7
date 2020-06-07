@@ -1,10 +1,13 @@
 @extends('layouts.base')
+
+@section('title', $title)
+
 @section('header')
 	<h2>Index from layout</h2>
 @endsection
 
 @section('body')
-<div>Method: {{ $method_name }}</div>
+<div>Body -- Method: {{ $method_name }}</div>
 @endsection
 
 @section('footer')

@@ -8,12 +8,11 @@ class IndexController extends Controller
 {
 	public function index(){
 
-//		echo 'Index page.';
+		$view_data	= [
+			'title'	=> 'Index page',
+			'method_name' => 'Index'
+		];
 
-
-		$data	= ['method_name' => 'Index'];
-
-		return view('pages.index', $data);
-
+		return view( 'pages.index', $view_data );
 	}
 }
