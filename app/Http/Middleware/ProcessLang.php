@@ -1,9 +1,9 @@
 <?php
-
 namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class ProcessLang
 {
@@ -16,11 +16,10 @@ class ProcessLang
      */
     public function handle( $request, Closure $next )
     {
-//		$current_locale = session('current_locale', 'en');
-
 		$lang	= $request->route('lang');
-		session(['current_locale' => $lang]);
 
-        return $next($request);
+		App::setLocale( $lang );
+
+        return $next( $request );
     }
 }

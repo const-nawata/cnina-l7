@@ -8,6 +8,7 @@
 
 @section('body')
 <div>Body -- Method: {{ $method_name }}</div>
+<div>{{ __('messages.welcome') }}</div>
 @endsection
 
 @section('footer')
