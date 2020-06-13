@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//use App\Http\Middleware\ProcessLang;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,7 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::match(['get'], '/', 'IndexController@index')->name('index');
+Route::match(['get'], '/{lang}', 'IndexController@index')
+	->middleware(\App\Http\Middleware\ProcessLang::class)
+	->name('index')
+;
