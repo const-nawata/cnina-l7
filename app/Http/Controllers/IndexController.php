@@ -9,11 +9,10 @@ class IndexController extends Controller
 {
 	public function index( Request $request, $lang ){
 
-//		$current_locale = $request->session()->get('current_locale', 'en');
-
 		$view_data	= [
 			'title'	=> 'Index page. ',
-			'method_name' => 'Index'
+			'method_name' => 'Index',
+			'lang'	=> $lang
 		];
 
 		return view( 'pages.index', $view_data );

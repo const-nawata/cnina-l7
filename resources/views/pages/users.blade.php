@@ -3,16 +3,15 @@
 @section('title', $title)
 
 @section('header')
-	<h2>Index from layout</h2>
+	<h2>Users list</h2>
 @endsection
 
 @section('body')
 <div>Body -- Method: {{ $method_name }}</div>
-<div>{{ __('messages.welcome') }}</div>
+<div>Users. {{ __('messages.welcome') }}!!!</div>
 
-<a href="{{ route('userslist', ['lang' => $lang]) }}">Users list</a>
 @endsection
 
 @section('footer')
-	<div>Footer</div>
+	<div>Users Footer</div>
 @endsection
