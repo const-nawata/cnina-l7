@@ -8,7 +8,7 @@
 
 @section('body')
 <div>Body -- Method: {{ $method_name }}</div>
-<div>{{ __('messages.welcome') }}</div>
+<div>{{ __('prompts.welcome') }}</div>
 
 <a href="{{ route('userslist') }}">Users list</a>
 @endsection

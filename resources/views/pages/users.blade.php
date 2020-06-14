@@ -8,7 +8,7 @@
 
 @section('body')
 <div>Body -- Method: {{ $method_name }}</div>
-<div>Users. {{ __('messages.welcome') }}!!! Locale: {{ Config::get('app.locale') }}</div>
+<div>Users. {{ __('prompts.welcome') }}!!! Locale: {{ Config::get('app.locale') }}</div>
 
 @endsection
 
