@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('header')
-	<h2>Index from layout</h2>
+	@include('layouts.header.main')
 @endsection
 
 @section('body')

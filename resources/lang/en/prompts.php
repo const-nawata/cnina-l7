@@ -1,4 +1,10 @@
 <?php
 return [
-	'welcome' => 'Welcome.'
+	'welcome'	=> 'Welcome.',
+
+	'langs'		=> [
+		'en'	=> 'eng',
+		'uk'	=> 'укр',
+		'ru'	=> 'рус'
+	]
 ];
