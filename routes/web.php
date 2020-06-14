@@ -1,12 +1,10 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
-Route::match(['get'], '/{lang}', 'IndexController@index')
-	->middleware(\App\Http\Middleware\ProcessLang::class)
+Route::match(['get'], '/', 'IndexController@index')
 	->name('index')
 ;
 
-Route::match(['get'], 'userslist/{lang}', 'UserController@userslist')
-	->middleware(\App\Http\Middleware\ProcessLang::class)
+Route::match(['get'], 'userslist', 'UserController@userslist')
 	->name('userslist')
 ;

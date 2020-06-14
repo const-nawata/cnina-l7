@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\App;
 
 class IndexController extends Controller
 {
-	public function index( Request $request, $lang ){
+	public function index( Request $request ){
+
+		session(['current_locale' => 'ru']);//TODO: Must be removed after set locale logic implementation.
 
 		$view_data	= [
 			'title'	=> 'Index page. ',
-			'method_name' => 'Index',
-			'lang'	=> $lang
+			'method_name' => 'Index'
 		];
 
 		return view( 'pages.index', $view_data );

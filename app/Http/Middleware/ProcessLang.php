@@ -16,10 +16,8 @@ class ProcessLang
      */
     public function handle( $request, Closure $next )
     {
-		$lang	= $request->route('lang');
-
-		App::setLocale( $lang );
-
+		$locale = session('current_locale', 'en');
+		App::setLocale( $locale );
         return $next( $request );
     }
 }

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 
 class UserController extends Controller
 {
-	public function userslist( Request $request, $lang ){
+	public function userslist( Request $request ){
 		$view_data	= [
 			'title'	=> 'Users',
 			'method_name' => 'Users'

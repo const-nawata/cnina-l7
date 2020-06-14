@@ -10,7 +10,7 @@
 <div>Body -- Method: {{ $method_name }}</div>
 <div>{{ __('messages.welcome') }}</div>
 
-<a href="{{ route('userslist', ['lang' => $lang]) }}">Users list</a>
+<a href="{{ route('userslist') }}">Users list</a>
 @endsection
 
 @section('footer')
