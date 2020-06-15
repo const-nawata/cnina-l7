@@ -1,12 +1,21 @@
-.content-navigation {
-  border-color: #3bbfca;
-  color: #2ea0a9;
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
+  min-width: 0;
 }
 
-.border {
-  padding: 9px;
-  margin: 9px;
-  border-color: #3bbfca;
+div.container.c-cont div.jumbotron-cnina div.lang a {
+  color: #e2ec9d;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
+  background-color: #baf7fd;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item {
+  color: #7b4412;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover {
+  background-color: #57ecfa;
 }
 
 /*# sourceMappingURL=app.css.map */

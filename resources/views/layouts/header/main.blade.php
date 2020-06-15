@@ -5,12 +5,12 @@
 			<div class="col-sm-11 shop-title">{{ $shop_name }}</div>
 
 			<div class="col-sm-1 text-right lang">
-{{--				<a class="dropdown-toggle" href="#" role="button" id="langDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ locale_name|trans|capitalize }}</a>--}}
+				<a class="dropdown-toggle" href="#" role="button" id="langDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lang</a>
 
 				<div class="dropdown-menu" aria-labelledby="langDropdownMenu">
-					<a class="dropdown-item" lang="en" href="#">{{ 'prompts.langs.en' }}</a>
-					<a class="dropdown-item" lang="uk" href="#">{{ 'prompts.langs.uk' }}</a>
-					<a class="dropdown-item" lang="ru" href="#">{{ 'prompts.langs.ru' }}</a>
+					<a class="dropdown-item" lang="en" href="#">{{ mb_convert_case(__('prompts.langs.en'),MB_CASE_TITLE) }}</a>
+					<a class="dropdown-item" lang="uk" href="#">{{ mb_convert_case(__('prompts.langs.uk'),MB_CASE_TITLE) }}</a>
+					<a class="dropdown-item" lang="ru" href="#">{{ mb_convert_case(__('prompts.langs.ru'),MB_CASE_TITLE) }}</a>
 				</div>
 			</div>
 		</div>

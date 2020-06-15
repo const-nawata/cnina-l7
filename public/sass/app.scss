@@ -1,14 +1,19 @@
-//
-$blue: #3bbfca;
-$margin: 18px;
+$drp_menu_bg_color: #baf7fd;
+$drp_menu_color: #7b4412;
 
-.content-navigation {
-  border-color: $blue;
-  color: darken($blue, 9%);
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
+	min-width: 0;
 }
 
-.border {
-  padding: $margin / 2;
-  margin: $margin / 2;
-  border-color: $blue;
+div.container.c-cont div.jumbotron-cnina div.lang a{
+	color: #e2ec9d;;
+}
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
+	background-color: $drp_menu_bg_color;
+}
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item{
+  color: $drp_menu_color;
+}
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover{
+  background-color: darken($drp_menu_bg_color, 20%);
 }
