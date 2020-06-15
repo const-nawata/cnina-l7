@@ -6,8 +6,12 @@ div.container.c-cont div.jumbotron-cnina div.lang a {
   color: #e2ec9d;
 }
 
+div.container.c-cont div.jumbotron-cnina div.lang a:hover {
+  color: #c9db48;
+}
+
 div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
-  background-color: #baf7fd;
+  background-color: #9febf3;
 }
 
 div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item {
@@ -15,7 +19,7 @@ div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item {
 }
 
 div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover {
-  background-color: #57ecfa;
+  background-color: #96cbd0;
 }
 
 /*# sourceMappingURL=app.css.map */
