@@ -41,5 +41,8 @@
 @yield('body')
 
 @yield('footer')
+
+{{--@section('javascript')--}}
+{{--@show--}}
 </body>
 </html>

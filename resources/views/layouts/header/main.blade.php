@@ -2,7 +2,7 @@
 
 	<div class="jumbotron bg-info border-bottom border-warning jumbotron-cnina">
 		<div class="row">
-			<div class="col-sm-11 shop-title">{{ $shop_name }}</div>
+			<div class="col-sm-11 shop-title">{{ env('APP_NAME') }}</div>
 
 			<div class="col-sm-1 text-right lang">
 				<a class="dropdown-toggle" href="#" role="button" id="langDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lang</a>
@@ -17,3 +17,15 @@
 	</div>
 
 </div>
+
+<script>
+
+
+	$("div.lang a.dropdown-item").click(function(){
+
+		alert("Test message of lang item.");
+
+		// window.location.replace( "/"+$(this).attr("lang")+"/"+current_url );
+	});
+
+</script>
